@@ -146,7 +146,7 @@ header{
     align-content: center;
     text-align: center;
     overflow: hidden;
-    
+    background-color:rgb(28,0,0);
     
 }
 
@@ -420,9 +420,7 @@ main{
     padding: 0;
     
 }
-#langganan >h3{
-    
-}
+
 
 #email{
     height:20px;
@@ -484,10 +482,13 @@ main{
 }
 
 @media(max-width: 739px){
+    #kontak{
+        padding:auto;
+    }
     .kontak-content{
         text-align: center;
         grid-template-columns: 1fr;
-        grid-template-rows: 0.2fr 1fr 1fr 0.5fr 0.5fr;
+        grid-template-rows: 0.2fr 1fr 1fr 0.2fr 0.5fr 0.5fr;
     }
     #kontak-title{
         text-align: left;
@@ -503,14 +504,38 @@ main{
          grid-column: 1;
         grid-row: 3;
     }
+    #langganan{
+        grid-column: 1;
+        grid-row: 4;
+        
+        
+    }
+    
+    #form {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+    
+    #form *{
+        justify-self: center;
+        width: 30%;
+        grid-row:auto;
+    }
+    #email{
+        width: 70%;
+        margin-right: 0;
+        margin-bottom: 5px;
+        margin-top: 0;
+    } 
+    
     #kontak-desc{
           grid-column: 1;
-        grid-row: 4;
+        grid-row: 5;
     }
     #copyright{
         text-align: center;
         grid-column: 1;
-        grid-row: 5;
+        grid-row: 6;
     }
 }
 
