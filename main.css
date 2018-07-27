@@ -501,13 +501,18 @@ main{
         grid-row: 2;
     }
     #donasi{
+        font-size: 4vw;
+        width: 30%;
          grid-column: 1;
         grid-row: 3;
+        word-wrap: break-word;
+        margin: 0;
+        padding: 0;
     }
     #langganan{
         grid-column: 1;
         grid-row: 4;
-        
+        margin: 0;
         
     }
     
